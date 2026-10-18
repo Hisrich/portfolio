@@ -7,9 +7,9 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Todo: put here your site title -->
-    <title>Nicholas Hisrich Addisi | ML/AI Engineer</title>
+    <title>Nicholas Hisrich Addisi | Software & AI Engineer</title>
     <meta name="keywords" content="[username], [name], skill" />
-    <meta name="description" content="Nicholas Hisrich Addisi | ML/AI Developer" />
+    <meta name="description" content="Nicholas Hisrich Addisi | Software & AI Developer" />
 
     <link
       rel="stylesheet"
@@ -129,6 +129,87 @@
                 margin: 15px 0;
             }
         }
+
+        /* NEW: Experience Section Styles */
+        #experience {
+            padding: 8rem 0;
+        }
+
+        .experience-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .experience-item {
+            border-left: 3px solid #00a0e9;
+            padding: 0 0 0 2rem;
+            margin-bottom: 4rem;
+            text-align: left;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-item__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+        }
+
+        .experience-item__role {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .experience-item__date {
+            color: #00a0e9;
+            font-size: 1.5rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .experience-item__company {
+            font-size: 1.6rem;
+            font-style: italic;
+            margin: 0.5rem 0 1.5rem;
+            opacity: 0.85;
+        }
+
+        .experience-item ul {
+            padding-left: 2rem;
+            margin: 0;
+        }
+
+        .experience-item li {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .experience-item {
+                padding-left: 1.5rem;
+            }
+
+            .experience-item__role {
+                font-size: 1.7rem;
+            }
+        }
+
+        /* NEW: Badge for private project */
+        .project-badge {
+            display: inline-block;
+            padding: 0.6rem 1.4rem;
+            border: 2px solid #00a0e9;
+            border-radius: 4px;
+            color: #00a0e9;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
     </style>
   </head>
 
@@ -144,6 +225,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="assets/Resume_Hisrich.pdf" target="_blank">Resume</a></li>
@@ -181,17 +263,16 @@
                 height="auto"
                 width="300px"
                 src="assets/profilepic.jpg"
-                alt="Profile Image"
               />
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                I am a Machine Learning & AI Engineer specializing in predictive modeling, data analysis, and AI-driven automation. With expertise in Python, SQL, Scikit-Learn, TensorFlow, PyTorch, XGBoost, Django and Flask, I build intelligent solutions that transform data into actionable insights. 
+                I am a Software Engineer specializing in full-stack development and AI engineering. Using Python, Flask, Django and React, I build scalable, user-focused applications that solve real-world problems. I also develop machine learning models and integrate AI capabilities into intelligent software to automate processes, enhance functionality and drive data-informed decisions.
               </p>
               <p class="about-wrapper__info-text">
-                Beyond this, I specialize in building AI-powered Telegram bots to automate workflows and optimize processes. With a background as a Veterinary Doctor, I bring a unique perspective by combining technology with healthcare and automation.
+                Beyond software engineering and AI, I specialize in developing AI-powered Telegram bots that streamline workflows and improve operational efficiency. With a background as a Veterinary Doctor, I bring a unique interdisciplinary perspective to technology.
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -209,11 +290,189 @@
       </div>
     </section>
 
+    <!-- **** NEW: Experience Section **** -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-wrapper">
+
+          <div class="experience-item">
+            <div class="experience-item__header">
+              <h3 class="experience-item__role">Veterinary Doctor | Software &amp; Laboratory Systems</h3>
+              <span class="experience-item__date">Jan 2026 – Sept 2026</span>
+            </div>
+            <p class="experience-item__company">National Food Safety Laboratory (NFSL), Accra</p>
+            <ul>
+              <li>Provided veterinary and laboratory support within the National Food Safety Laboratory while contributing to day-to-day food-safety operations.</li>
+              <li>Collaborated with the Data Manager to digitize Excel-based laboratory workflows into an internal system covering inventory, sample reception, media preparation, and bacteriology.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-item__header">
+              <h3 class="experience-item__role">ML/AI Engineer Intern</h3>
+              <span class="experience-item__date">Jun 2025 – Sep 2025</span>
+            </div>
+            <p class="experience-item__company">Thrive Africa, Remote</p>
+            <ul>
+              <li>Built and optimized ML models, improved data pipelines and supported impactful projects in the Ghanaian market.</li>
+              <li>Contributed to data preparation, model development, evaluation and improvement of machine-learning workflows.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-item__header">
+              <h3 class="experience-item__role">Backend Developer Intern</h3>
+              <span class="experience-item__date">Jan 2025 – Mar 2025</span>
+            </div>
+            <p class="experience-item__company">InternPulse, Remote</p>
+            <ul>
+              <li>Built a secure Flask payment API integrating Paystack and authored API documentation.</li>
+              <li>Worked on backend application development and API integration using Python and Flask.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /END Experience Section -->
+
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
 
+          <!-- NEW PROJECT 1: Laboratory Management System -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Laboratory Management System — National Food Safety Laboratory</h3>
+                <div>
+                  <p class="mb-4">
+                    A web-based Laboratory Management System designed to replace fragmented Excel-based laboratory workflows at the National Food Safety Laboratory. I helped develop and migrate workflows for laboratory inventory, sample reception, media preparation and bacteriology, applying backend and database development principles to improve the organization and management of laboratory records and operational data.
+                    <br>
+                    Tech Stack: Python, Backend Development, Relational Databases, SQL.
+                  </p>
+                </div>
+                <span class="project-badge">
+                  <i class="fa fa-lock" aria-hidden="true"></i> Private / Internal System
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="Laboratory Management System"
+                    class="img-fluid"
+                    src="assets/lab_system.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEW PROJECT 2: Job Hunt Bot -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Job Hunt Bot: Automated Job Discovery System</h3>
+                <div>
+                  <p class="mb-4">
+                    A Python-based job discovery system that collects technology job listings, evaluates their relevance, and delivers matched opportunities through Telegram. It features a SQLAlchemy database layer with CRUD operations, job deduplication, status tracking, and filtering by location, remote status and match score, plus automated scoring, scheduled searches and pipeline orchestration across LinkedIn job-alert emails, RemoteOK and We Work Remotely.
+                    <br>
+                    Tech Stack: Python, SQLAlchemy, SQLite/PostgreSQL, Telegram API, REST APIs.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/Hisrich/Job_Hunt_Bot"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/Hisrich/Job_Hunt_Bot"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/Hisrich/Job_Hunt_Bot" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Job Hunt Bot"
+                      class="img-fluid"
+                      src="assets/job_hunt_bot.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEW PROJECT 3: Hellybert Veterinary Services Website -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Hellybert Veterinary Services Website — Client Project</h3>
+                <div>
+                  <p class="mb-4">
+                    A production veterinary services website designed and developed for a client, covering home veterinary care, vaccinations, senior pet care, services, booking and contact workflows. I built and deployed the client-facing platform on Render based on the client's service requirements.
+                    <br>
+                    Tech Stack: Full-Stack Web Development, HTML, CSS, JavaScript, Python, Render.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://hellybert-website.onrender.com"
+                >
+                  See Live
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://hellybert-website.onrender.com" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Hellybert Veterinary Services Website"
+                      class="img-fluid"
+                      src="assets/hellybert.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXISTING PROJECTS (unchanged) -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
@@ -502,6 +761,7 @@
           </a>
           <a rel="noreferrer" href="https://github.com/Hisrich/" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
+          </a>
           <a rel="noreferrer" href="https://t.me/his_rich" target="_blank">
             <i class="fa fa-telegram fa-inverse"></i>
           </a>
@@ -515,8 +775,14 @@
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                // Skip placeholder links like "#!" which aren't valid selectors
+                if (href === '#' || href === '#!') return;
+                const target = document.querySelector(href);
+                if (!target) return;
+
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                target.scrollIntoView({
                     behavior: 'smooth'
                 });
             
@@ -544,9 +810,8 @@
             
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
                 
-                if (pageYOffset >= (sectionTop - 300)) {
+                if (window.pageYOffset >= (sectionTop - 300)) {
                     current = section.getAttribute('id');
                 }
             });
